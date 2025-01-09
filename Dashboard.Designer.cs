@@ -46,7 +46,7 @@
             label15 = new Label();
             pictureBox12 = new PictureBox();
             panel6 = new Panel();
-            label6 = new Label();
+            cur = new Label();
             label7 = new Label();
             pictureBox9 = new PictureBox();
             panel9 = new Panel();
@@ -282,7 +282,7 @@
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(255, 255, 192);
-            panel6.Controls.Add(label6);
+            panel6.Controls.Add(cur);
             panel6.Controls.Add(label7);
             panel6.Controls.Add(pictureBox9);
             panel6.Location = new Point(479, 29);
@@ -291,16 +291,16 @@
             panel6.Size = new Size(229, 85);
             panel6.TabIndex = 0;
             // 
-            // label6
+            // cur
             // 
-            label6.Dock = DockStyle.Bottom;
-            label6.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(75, 46);
-            label6.Name = "label6";
-            label6.Size = new Size(154, 39);
-            label6.TabIndex = 7;
-            label6.Text = "0";
-            label6.TextAlign = ContentAlignment.MiddleLeft;
+            cur.Dock = DockStyle.Bottom;
+            cur.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cur.Location = new Point(75, 46);
+            cur.Name = "cur";
+            cur.Size = new Size(154, 39);
+            cur.TabIndex = 7;
+            cur.Text = "0";
+            cur.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
@@ -585,7 +585,7 @@
         private Label label15;
         private PictureBox pictureBox12;
         private Panel panel6;
-        private Label label6;
+        private Label cur;
         private Label label7;
         private PictureBox pictureBox9;
         private Panel panel9;
