@@ -35,8 +35,6 @@
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
-            label6 = new Label();
-            label3 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
             label7 = new Label();
@@ -146,30 +144,6 @@
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = false;
             // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.None;
-            label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 12F);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(390, 301);
-            label6.Name = "label6";
-            label6.Size = new Size(51, 21);
-            label6.TabIndex = 1;
-            label6.Text = "Email";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 12F);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(390, 361);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 21);
-            label3.TabIndex = 1;
-            label3.Text = "Address";
-            // 
             // panel2
             // 
             panel2.Controls.Add(panel3);
@@ -194,8 +168,6 @@
             panel3.Controls.Add(button4);
             panel3.Controls.Add(button3);
             panel3.Controls.Add(button2);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label3);
             panel3.Controls.Add(textBox5);
             panel3.Controls.Add(textBox4);
             panel3.Controls.Add(textBox3);
@@ -338,8 +310,6 @@
         private Button button4;
         private Button button3;
         private Button button2;
-        private Label label6;
-        private Label label3;
         private Panel panel2;
         private Panel panel3;
         private TextBox textBox5;

@@ -38,7 +38,7 @@
             label17 = new Label();
             pictureBox11 = new PictureBox();
             panel6 = new Panel();
-            label6 = new Label();
+            cur = new Label();
             label7 = new Label();
             pictureBox9 = new PictureBox();
             panel5 = new Panel();
@@ -50,7 +50,7 @@
             label1 = new Label();
             pictureBox7 = new PictureBox();
             panel2 = new Panel();
-            label5 = new Label();
+            adminName = new Label();
             panel3.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -83,9 +83,10 @@
             panel12.Controls.Add(dataGridView1);
             panel12.Controls.Add(label18);
             panel12.Dock = DockStyle.Bottom;
-            panel12.Location = new Point(0, 150);
+            panel12.Location = new Point(0, 134);
+            panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(860, 376);
+            panel12.Size = new Size(860, 392);
             panel12.TabIndex = 1;
             // 
             // dataGridView1
@@ -94,7 +95,7 @@
             dataGridView1.Dock = DockStyle.Top;
             dataGridView1.Location = new Point(0, 32);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(860, 344);
+            dataGridView1.Size = new Size(860, 360);
             dataGridView1.TabIndex = 4;
             // 
             // label18
@@ -115,7 +116,7 @@
             panel11.Controls.Add(label16);
             panel11.Controls.Add(label17);
             panel11.Controls.Add(pictureBox11);
-            panel11.Location = new Point(634, 22);
+            panel11.Location = new Point(635, 22);
             panel11.Name = "panel11";
             panel11.Size = new Size(200, 64);
             panel11.TabIndex = 0;
@@ -156,7 +157,7 @@
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(255, 255, 192);
-            panel6.Controls.Add(label6);
+            panel6.Controls.Add(cur);
             panel6.Controls.Add(label7);
             panel6.Controls.Add(pictureBox9);
             panel6.Location = new Point(419, 22);
@@ -164,16 +165,16 @@
             panel6.Size = new Size(200, 64);
             panel6.TabIndex = 0;
             // 
-            // label6
+            // cur
             // 
-            label6.Dock = DockStyle.Bottom;
-            label6.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(66, 35);
-            label6.Name = "label6";
-            label6.Size = new Size(134, 29);
-            label6.TabIndex = 7;
-            label6.Text = "0";
-            label6.TextAlign = ContentAlignment.MiddleLeft;
+            cur.Dock = DockStyle.Bottom;
+            cur.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cur.Location = new Point(66, 35);
+            cur.Name = "cur";
+            cur.Size = new Size(134, 29);
+            cur.TabIndex = 7;
+            cur.Text = "0";
+            cur.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
@@ -287,24 +288,24 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(label5);
+            panel2.Controls.Add(adminName);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(860, 52);
             panel2.TabIndex = 5;
             // 
-            // label5
+            // adminName
             // 
-            label5.Anchor = AnchorStyles.None;
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(4, 8);
-            label5.Name = "label5";
-            label5.Size = new Size(258, 36);
-            label5.TabIndex = 2;
-            label5.Text = "Welcome, Admin";
+            adminName.Anchor = AnchorStyles.None;
+            adminName.AutoSize = true;
+            adminName.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            adminName.ForeColor = Color.White;
+            adminName.Location = new Point(4, 8);
+            adminName.Name = "adminName";
+            adminName.Size = new Size(258, 36);
+            adminName.TabIndex = 2;
+            adminName.Text = "Welcome, Admin";
             // 
             // Dashboard
             // 
@@ -345,7 +346,7 @@
         private Label label17;
         private PictureBox pictureBox11;
         private Panel panel6;
-        private Label label6;
+        private Label cur;
         private Label label7;
         private PictureBox pictureBox9;
         private Panel panel5;
@@ -357,6 +358,6 @@
         private Label label1;
         private PictureBox pictureBox7;
         private Panel panel2;
-        private Label label5;
+        private Label adminName;
     }
 }

@@ -12,14 +12,39 @@ namespace BankingManagementSystem
 {
     public partial class Customer : Form
     {
+        CustomerAccountList customerAccountList;
         public Customer()
         {
             InitializeComponent();
+
+            customerAccountList = CustomerAccountList.GetInstance();
+            customers.DataSource = customerAccountList.accounts;
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            string name = nameInput.Text;
+            string phoneNumber = numberInput.Text;
+            string email = emailInput.Text;
+            string address = addressInput.Text;
+            int accountId = Convert.ToInt32(accountIdInput.Text);
+            string accountType = typeInput.Text;
+            string dateOpened = dateOpenedInput.Text;
+
+            CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened);
+            customerAccountList.accounts.Add(newAccount);
+            RefreshDataGridView();
+        }
+
+        void RefreshDataGridView()
+        {
+            customers.DataSource = null;
+            customers.DataSource = customerAccountList.accounts;
         }
     }
 }

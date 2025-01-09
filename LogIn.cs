@@ -14,10 +14,12 @@ namespace BankingManagementSystem
     {
         private bool isDragging = false;
         private Point startPoint = new Point(0, 0);
+        public AdminAccounts adminAccounts;
 
         public LogIn()
         {
             InitializeComponent();
+            adminAccounts = AdminAccounts.GetInstance();
         }
 
         private void ShowFormInPanel(Form logIn, Panel panelHolder)
@@ -33,7 +35,26 @@ namespace BankingManagementSystem
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            btnLogIn.Click += (s, e) => ShowFormInPanel(new FormHolder(), Main.showFormPanel);
+            string username = usernameInput.Text;
+            string password = passwordInput.Text;
+
+            AdminAccount account = adminAccounts.accounts.FirstOrDefault(acc => acc.username == username);
+            if(account != null)
+            {
+                // Kapag nag match yung password
+                if(account.password.Equals(password))
+                {
+                    Program.currentAdmin = account;
+                    btnLogIn.Click += (s, e) => ShowFormInPanel(new FormHolder(), Main.showFormPanel);
+                } else
+                {
+                    MessageBox.Show("Invalid credentials");
+                }
+            } else
+            {
+                MessageBox.Show("No account was found");
+            }
+
         }
     }
 }

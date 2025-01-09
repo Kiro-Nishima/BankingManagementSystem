@@ -82,8 +82,9 @@
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox7.Location = new Point(22, 370);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(49, 38);
+            pictureBox7.Size = new Size(49, 39);
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
             // 
@@ -151,8 +152,9 @@
             btnAboutUs.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAboutUs.ForeColor = Color.White;
             btnAboutUs.Location = new Point(67, 370);
+            btnAboutUs.Margin = new Padding(3, 2, 3, 2);
             btnAboutUs.Name = "btnAboutUs";
-            btnAboutUs.Size = new Size(170, 38);
+            btnAboutUs.Size = new Size(170, 39);
             btnAboutUs.TabIndex = 3;
             btnAboutUs.Text = "About Us";
             btnAboutUs.TextAlign = ContentAlignment.MiddleLeft;

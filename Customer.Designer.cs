@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label5 = new Label();
             label2 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            customers = new DataGridView();
+            deleteBtn = new Button();
+            updateBtn = new Button();
+            addBtn = new Button();
+            saveBtn = new Button();
             label4 = new Label();
             label6 = new Label();
             label1 = new Label();
@@ -45,18 +46,18 @@
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox6 = new TextBox();
+            nameInput = new TextBox();
+            emailInput = new TextBox();
+            numberInput = new TextBox();
+            addressInput = new TextBox();
             textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            textBox2 = new TextBox();
+            dateOpenedInput = new TextBox();
+            typeInput = new TextBox();
+            accountIdInput = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)customers).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -105,11 +106,11 @@
             // 
             panel3.BackColor = Color.Transparent;
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(dataGridView1);
-            panel3.Controls.Add(button5);
-            panel3.Controls.Add(button4);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
+            panel3.Controls.Add(customers);
+            panel3.Controls.Add(deleteBtn);
+            panel3.Controls.Add(updateBtn);
+            panel3.Controls.Add(addBtn);
+            panel3.Controls.Add(saveBtn);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label1);
@@ -118,14 +119,14 @@
             panel3.Controls.Add(label8);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label2);
-            panel3.Controls.Add(textBox5);
-            panel3.Controls.Add(textBox4);
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(textBox6);
+            panel3.Controls.Add(nameInput);
+            panel3.Controls.Add(emailInput);
+            panel3.Controls.Add(numberInput);
+            panel3.Controls.Add(addressInput);
             panel3.Controls.Add(textBox9);
-            panel3.Controls.Add(textBox8);
-            panel3.Controls.Add(textBox7);
-            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(dateOpenedInput);
+            panel3.Controls.Add(typeInput);
+            panel3.Controls.Add(accountIdInput);
             panel3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel3.ForeColor = Color.White;
             panel3.Location = new Point(37, 6);
@@ -133,73 +134,77 @@
             panel3.Size = new Size(785, 505);
             panel3.TabIndex = 2;
             // 
-            // dataGridView1
+            // customers
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 326);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(777, 174);
-            dataGridView1.TabIndex = 3;
+            customers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            customers.Location = new Point(3, 326);
+            customers.Name = "customers";
+            customers.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            customers.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            customers.Size = new Size(777, 174);
+            customers.TabIndex = 3;
             // 
-            // button5
+            // deleteBtn
             // 
-            button5.AutoSize = true;
-            button5.BackColor = Color.IndianRed;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(558, 278);
-            button5.Name = "button5";
-            button5.Size = new Size(115, 31);
-            button5.TabIndex = 1;
-            button5.Text = "Delete";
-            button5.UseVisualStyleBackColor = false;
+            deleteBtn.AutoSize = true;
+            deleteBtn.BackColor = Color.IndianRed;
+            deleteBtn.FlatAppearance.BorderSize = 0;
+            deleteBtn.FlatStyle = FlatStyle.Flat;
+            deleteBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            deleteBtn.ForeColor = Color.White;
+            deleteBtn.Location = new Point(558, 278);
+            deleteBtn.Name = "deleteBtn";
+            deleteBtn.Size = new Size(115, 33);
+            deleteBtn.TabIndex = 1;
+            deleteBtn.Text = "Delete";
+            deleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // updateBtn
             // 
-            button4.AutoSize = true;
-            button4.BackColor = Color.IndianRed;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(437, 278);
-            button4.Name = "button4";
-            button4.Size = new Size(115, 31);
-            button4.TabIndex = 1;
-            button4.Text = "Update";
-            button4.UseVisualStyleBackColor = false;
+            updateBtn.AutoSize = true;
+            updateBtn.BackColor = Color.IndianRed;
+            updateBtn.FlatAppearance.BorderSize = 0;
+            updateBtn.FlatStyle = FlatStyle.Flat;
+            updateBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            updateBtn.ForeColor = Color.White;
+            updateBtn.Location = new Point(437, 278);
+            updateBtn.Name = "updateBtn";
+            updateBtn.Size = new Size(115, 33);
+            updateBtn.TabIndex = 1;
+            updateBtn.Text = "Update";
+            updateBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // addBtn
             // 
-            button3.AutoSize = true;
-            button3.BackColor = Color.IndianRed;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(221, 278);
-            button3.Name = "button3";
-            button3.Size = new Size(115, 31);
-            button3.TabIndex = 1;
-            button3.Text = "Add";
-            button3.UseVisualStyleBackColor = false;
+            addBtn.AutoSize = true;
+            addBtn.BackColor = Color.IndianRed;
+            addBtn.FlatAppearance.BorderSize = 0;
+            addBtn.FlatStyle = FlatStyle.Flat;
+            addBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addBtn.ForeColor = Color.White;
+            addBtn.Location = new Point(221, 278);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(115, 33);
+            addBtn.TabIndex = 1;
+            addBtn.Text = "Add";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
             // 
-            // button2
+            // saveBtn
             // 
-            button2.AutoSize = true;
-            button2.BackColor = Color.IndianRed;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(100, 278);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 31);
-            button2.TabIndex = 1;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = false;
+            saveBtn.AutoSize = true;
+            saveBtn.BackColor = Color.IndianRed;
+            saveBtn.FlatAppearance.BorderSize = 0;
+            saveBtn.FlatStyle = FlatStyle.Flat;
+            saveBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            saveBtn.ForeColor = Color.White;
+            saveBtn.Location = new Point(100, 278);
+            saveBtn.Name = "saveBtn";
+            saveBtn.Size = new Size(115, 33);
+            saveBtn.TabIndex = 1;
+            saveBtn.Text = "Save";
+            saveBtn.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -285,38 +290,38 @@
             label7.TabIndex = 1;
             label7.Text = "Account_Type";
             // 
-            // textBox5
+            // nameInput
             // 
-            textBox5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(100, 37);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(264, 27);
-            textBox5.TabIndex = 0;
+            nameInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nameInput.Location = new Point(100, 37);
+            nameInput.Name = "nameInput";
+            nameInput.Size = new Size(264, 27);
+            nameInput.TabIndex = 0;
             // 
-            // textBox4
+            // emailInput
             // 
-            textBox4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(100, 156);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(264, 27);
-            textBox4.TabIndex = 0;
+            emailInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            emailInput.Location = new Point(100, 156);
+            emailInput.Name = "emailInput";
+            emailInput.Size = new Size(264, 27);
+            emailInput.TabIndex = 0;
             // 
-            // textBox3
+            // numberInput
             // 
-            textBox3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(100, 94);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(264, 27);
-            textBox3.TabIndex = 0;
+            numberInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            numberInput.Location = new Point(100, 94);
+            numberInput.Name = "numberInput";
+            numberInput.Size = new Size(264, 27);
+            numberInput.TabIndex = 0;
             // 
-            // textBox6
+            // addressInput
             // 
-            textBox6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(100, 216);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(264, 27);
-            textBox6.TabIndex = 0;
-            textBox6.TextChanged += textBox6_TextChanged;
+            addressInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addressInput.Location = new Point(100, 216);
+            addressInput.Name = "addressInput";
+            addressInput.Size = new Size(264, 27);
+            addressInput.TabIndex = 0;
+            addressInput.TextChanged += textBox6_TextChanged;
             // 
             // textBox9
             // 
@@ -326,29 +331,29 @@
             textBox9.Size = new Size(264, 27);
             textBox9.TabIndex = 0;
             // 
-            // textBox8
+            // dateOpenedInput
             // 
-            textBox8.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox8.Location = new Point(412, 156);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(264, 27);
-            textBox8.TabIndex = 0;
+            dateOpenedInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateOpenedInput.Location = new Point(412, 156);
+            dateOpenedInput.Name = "dateOpenedInput";
+            dateOpenedInput.Size = new Size(264, 27);
+            dateOpenedInput.TabIndex = 0;
             // 
-            // textBox7
+            // typeInput
             // 
-            textBox7.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox7.Location = new Point(412, 94);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(264, 27);
-            textBox7.TabIndex = 0;
+            typeInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            typeInput.Location = new Point(412, 94);
+            typeInput.Name = "typeInput";
+            typeInput.Size = new Size(264, 27);
+            typeInput.TabIndex = 0;
             // 
-            // textBox2
+            // accountIdInput
             // 
-            textBox2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(413, 37);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(264, 27);
-            textBox2.TabIndex = 0;
+            accountIdInput.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            accountIdInput.Location = new Point(413, 37);
+            accountIdInput.Name = "accountIdInput";
+            accountIdInput.Size = new Size(264, 27);
+            accountIdInput.TabIndex = 0;
             // 
             // Customer
             // 
@@ -367,7 +372,7 @@
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)customers).EndInit();
             ResumeLayout(false);
         }
 
@@ -377,26 +382,26 @@
         private Label label2;
         private Panel panel2;
         private Panel panel3;
-        private Button button2;
+        private Button saveBtn;
         private Label label4;
         private Label label1;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private DataGridView dataGridView1;
+        private TextBox nameInput;
+        private TextBox numberInput;
+        private TextBox accountIdInput;
+        private Button deleteBtn;
+        private Button updateBtn;
+        private Button addBtn;
+        private DataGridView customers;
         private Label label5;
         private Label label6;
         private Label label3;
-        private TextBox textBox4;
-        private TextBox textBox6;
+        private TextBox emailInput;
+        private TextBox addressInput;
         private Label label9;
         private Label label8;
         private Label label7;
         private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
+        private TextBox dateOpenedInput;
+        private TextBox typeInput;
     }
 }
