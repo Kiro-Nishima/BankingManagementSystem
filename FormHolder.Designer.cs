@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHolder));
             panel1 = new Panel();
+            pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
+            btnAboutUs = new Button();
             btnEmployee = new Button();
             btnTransaction = new Button();
             btnAccount = new Button();
@@ -43,6 +45,7 @@
             pictureBox1 = new PictureBox();
             FormHolderDisplay = new Panel();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -54,11 +57,13 @@
             // panel1
             // 
             panel1.BackColor = Color.Maroon;
+            panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(btnAboutUs);
             panel1.Controls.Add(btnEmployee);
             panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(btnAccount);
@@ -71,6 +76,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(290, 771);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.IndianRed;
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox7.Location = new Point(22, 370);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(49, 38);
+            pictureBox7.TabIndex = 1;
+            pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -131,6 +147,23 @@
             pictureBox2.Size = new Size(56, 51);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            // 
+            // btnAboutUs
+            // 
+            btnAboutUs.AutoSize = true;
+            btnAboutUs.BackColor = Color.IndianRed;
+            btnAboutUs.FlatAppearance.BorderSize = 0;
+            btnAboutUs.FlatStyle = FlatStyle.Flat;
+            btnAboutUs.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAboutUs.ForeColor = Color.White;
+            btnAboutUs.Location = new Point(67, 370);
+            btnAboutUs.Name = "btnAboutUs";
+            btnAboutUs.Size = new Size(170, 38);
+            btnAboutUs.TabIndex = 3;
+            btnAboutUs.Text = "About Us";
+            btnAboutUs.TextAlign = ContentAlignment.MiddleLeft;
+            btnAboutUs.UseVisualStyleBackColor = false;
+            btnAboutUs.Click += btnAboutUs_Click;
             // 
             // btnEmployee
             // 
@@ -258,6 +291,7 @@
             Text = "Dashboard";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -282,5 +316,7 @@
         private Button btnAccount;
         private PictureBox pictureBox6;
         private Button btnEmployee;
+        private PictureBox pictureBox7;
+        private Button btnAboutUs;
     }
 }

@@ -145,6 +145,7 @@
             Controls.Add(showFormPanel);
             Controls.Add(formControlPanel);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -162,9 +163,9 @@
         private Panel formControlPanel;
         private PictureBox pbMin;
         private PictureBox pbExit;
-        public static Panel showFormPanel;
         private PictureBox mainBg;
         private Button btnLogIn;
         private Button btnExit;
+        public static Panel showFormPanel;
     }
 }
