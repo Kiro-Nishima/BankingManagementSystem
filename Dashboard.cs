@@ -15,6 +15,9 @@ namespace BankingManagementSystem
         public Dashboard()
         {
             InitializeComponent();
+
+            AdminAccount currentAdmin = Program.currentAdmin;
+            adminName.Text = $"Welcome, {currentAdmin.name}";
         }
     }
 }

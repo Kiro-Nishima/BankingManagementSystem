@@ -34,8 +34,8 @@
             panel2 = new Panel();
             linkLabel1 = new LinkLabel();
             btnLogIn = new Button();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            passwordInput = new TextBox();
+            usernameInput = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -70,8 +70,8 @@
             // 
             panel2.Controls.Add(linkLabel1);
             panel2.Controls.Add(btnLogIn);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(passwordInput);
+            panel2.Controls.Add(usernameInput);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
@@ -91,7 +91,7 @@
             linkLabel1.LinkColor = Color.White;
             linkLabel1.Location = new Point(344, 574);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(140, 21);
+            linkLabel1.Size = new Size(170, 23);
             linkLabel1.TabIndex = 4;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Create Account";
@@ -107,29 +107,30 @@
             btnLogIn.ForeColor = Color.White;
             btnLogIn.Location = new Point(220, 453);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(386, 51);
+            btnLogIn.Size = new Size(386, 54);
             btnLogIn.TabIndex = 3;
             btnLogIn.Text = "Log In";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
             // 
-            // textBox2
+            // passwordInput
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(220, 309);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(386, 36);
-            textBox2.TabIndex = 1;
+            passwordInput.BorderStyle = BorderStyle.None;
+            passwordInput.Font = new Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            passwordInput.Location = new Point(220, 309);
+            passwordInput.Name = "passwordInput";
+            passwordInput.Size = new Size(386, 45);
+            passwordInput.TabIndex = 1;
+            passwordInput.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // usernameInput
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(220, 215);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(386, 36);
-            textBox1.TabIndex = 1;
+            usernameInput.BorderStyle = BorderStyle.None;
+            usernameInput.Font = new Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usernameInput.Location = new Point(220, 215);
+            usernameInput.Name = "usernameInput";
+            usernameInput.Size = new Size(386, 45);
+            usernameInput.TabIndex = 1;
             // 
             // label3
             // 
@@ -137,9 +138,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(215, 287);
+            label3.Location = new Point(220, 276);
             label3.Name = "label3";
-            label3.Size = new Size(95, 22);
+            label3.Size = new Size(122, 30);
             label3.TabIndex = 0;
             label3.Text = "Password";
             // 
@@ -149,9 +150,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(214, 194);
+            label2.Location = new Point(215, 182);
             label2.Name = "label2";
-            label2.Size = new Size(101, 22);
+            label2.Size = new Size(133, 30);
             label2.TabIndex = 0;
             label2.Text = "Username";
             // 
@@ -163,13 +164,13 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(283, 9);
             label1.Name = "label1";
-            label1.Size = new Size(256, 78);
+            label1.Size = new Size(318, 96);
             label1.TabIndex = 0;
             label1.Text = "LOG IN";
             // 
             // LogIn
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(1130, 617);
@@ -192,8 +193,8 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox usernameInput;
+        private TextBox passwordInput;
         private Label label3;
         private Label label2;
         private LinkLabel linkLabel1;

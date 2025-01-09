@@ -66,7 +66,7 @@
             label1 = new Label();
             pictureBox7 = new PictureBox();
             panel2 = new Panel();
-            label5 = new Label();
+            adminName = new Label();
             panel3.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -101,9 +101,10 @@
             panel3.Controls.Add(panel8);
             panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(0, 52);
+            panel3.Location = new Point(0, 69);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(860, 526);
+            panel3.Size = new Size(983, 702);
             panel3.TabIndex = 6;
             // 
             // panel12
@@ -111,18 +112,21 @@
             panel12.Controls.Add(dataGridView1);
             panel12.Controls.Add(label18);
             panel12.Dock = DockStyle.Bottom;
-            panel12.Location = new Point(0, 211);
+            panel12.Location = new Point(0, 282);
+            panel12.Margin = new Padding(3, 4, 3, 4);
             panel12.Name = "panel12";
-            panel12.Size = new Size(860, 315);
+            panel12.Size = new Size(983, 420);
             panel12.TabIndex = 1;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Top;
-            dataGridView1.Location = new Point(0, 32);
+            dataGridView1.Location = new Point(0, 40);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(860, 280);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(983, 373);
             dataGridView1.TabIndex = 4;
             // 
             // label18
@@ -133,7 +137,7 @@
             label18.ForeColor = Color.White;
             label18.Location = new Point(0, 0);
             label18.Name = "label18";
-            label18.Size = new Size(457, 32);
+            label18.Size = new Size(576, 40);
             label18.TabIndex = 3;
             label18.Text = "EMPLOYEES INFORMATION BOARD";
             // 
@@ -143,18 +147,19 @@
             panel11.Controls.Add(label16);
             panel11.Controls.Add(label17);
             panel11.Controls.Add(pictureBox11);
-            panel11.Location = new Point(632, 105);
+            panel11.Location = new Point(722, 140);
+            panel11.Margin = new Padding(3, 4, 3, 4);
             panel11.Name = "panel11";
-            panel11.Size = new Size(200, 64);
+            panel11.Size = new Size(229, 85);
             panel11.TabIndex = 0;
             // 
             // label16
             // 
             label16.Dock = DockStyle.Bottom;
             label16.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(66, 35);
+            label16.Location = new Point(75, 46);
             label16.Name = "label16";
-            label16.Size = new Size(134, 29);
+            label16.Size = new Size(154, 39);
             label16.TabIndex = 7;
             label16.Text = "0";
             label16.TextAlign = ContentAlignment.MiddleLeft;
@@ -163,9 +168,9 @@
             // 
             label17.Dock = DockStyle.Top;
             label17.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label17.Location = new Point(66, 0);
+            label17.Location = new Point(75, 0);
             label17.Name = "label17";
-            label17.Size = new Size(134, 29);
+            label17.Size = new Size(154, 39);
             label17.TabIndex = 6;
             label17.Text = "TRANSACTIONS";
             label17.TextAlign = ContentAlignment.MiddleLeft;
@@ -176,8 +181,9 @@
             pictureBox11.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox11.Dock = DockStyle.Left;
             pictureBox11.Location = new Point(0, 0);
+            pictureBox11.Margin = new Padding(3, 4, 3, 4);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(66, 64);
+            pictureBox11.Size = new Size(75, 85);
             pictureBox11.TabIndex = 2;
             pictureBox11.TabStop = false;
             // 
@@ -187,18 +193,19 @@
             panel7.Controls.Add(label8);
             panel7.Controls.Add(label9);
             panel7.Controls.Add(pictureBox10);
-            panel7.Location = new Point(632, 22);
+            panel7.Location = new Point(722, 29);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(200, 64);
+            panel7.Size = new Size(229, 85);
             panel7.TabIndex = 0;
             // 
             // label8
             // 
             label8.Dock = DockStyle.Bottom;
             label8.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(66, 35);
+            label8.Location = new Point(75, 46);
             label8.Name = "label8";
-            label8.Size = new Size(134, 29);
+            label8.Size = new Size(154, 39);
             label8.TabIndex = 7;
             label8.Text = "0";
             label8.TextAlign = ContentAlignment.MiddleLeft;
@@ -207,9 +214,9 @@
             // 
             label9.Dock = DockStyle.Top;
             label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label9.Location = new Point(66, 0);
+            label9.Location = new Point(75, 0);
             label9.Name = "label9";
-            label9.Size = new Size(134, 29);
+            label9.Size = new Size(154, 39);
             label9.TabIndex = 6;
             label9.Text = "SAVING ACCOUNTS";
             label9.TextAlign = ContentAlignment.MiddleLeft;
@@ -220,8 +227,9 @@
             pictureBox10.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox10.Dock = DockStyle.Left;
             pictureBox10.Location = new Point(0, 0);
+            pictureBox10.Margin = new Padding(3, 4, 3, 4);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(66, 64);
+            pictureBox10.Size = new Size(75, 85);
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
             // 
@@ -231,18 +239,19 @@
             panel10.Controls.Add(label14);
             panel10.Controls.Add(label15);
             panel10.Controls.Add(pictureBox12);
-            panel10.Location = new Point(419, 105);
+            panel10.Location = new Point(479, 140);
+            panel10.Margin = new Padding(3, 4, 3, 4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(200, 64);
+            panel10.Size = new Size(229, 85);
             panel10.TabIndex = 0;
             // 
             // label14
             // 
             label14.Dock = DockStyle.Bottom;
             label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(66, 35);
+            label14.Location = new Point(75, 46);
             label14.Name = "label14";
-            label14.Size = new Size(134, 29);
+            label14.Size = new Size(154, 39);
             label14.TabIndex = 7;
             label14.Text = "0";
             label14.TextAlign = ContentAlignment.MiddleLeft;
@@ -251,9 +260,9 @@
             // 
             label15.Dock = DockStyle.Top;
             label15.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label15.Location = new Point(66, 0);
+            label15.Location = new Point(75, 0);
             label15.Name = "label15";
-            label15.Size = new Size(134, 29);
+            label15.Size = new Size(154, 39);
             label15.TabIndex = 6;
             label15.Text = "DEPOSIT MONEY";
             label15.TextAlign = ContentAlignment.MiddleLeft;
@@ -264,8 +273,9 @@
             pictureBox12.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox12.Dock = DockStyle.Left;
             pictureBox12.Location = new Point(0, 0);
+            pictureBox12.Margin = new Padding(3, 4, 3, 4);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(66, 64);
+            pictureBox12.Size = new Size(75, 85);
             pictureBox12.TabIndex = 2;
             pictureBox12.TabStop = false;
             // 
@@ -275,18 +285,19 @@
             panel6.Controls.Add(label6);
             panel6.Controls.Add(label7);
             panel6.Controls.Add(pictureBox9);
-            panel6.Location = new Point(419, 22);
+            panel6.Location = new Point(479, 29);
+            panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(200, 64);
+            panel6.Size = new Size(229, 85);
             panel6.TabIndex = 0;
             // 
             // label6
             // 
             label6.Dock = DockStyle.Bottom;
             label6.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(66, 35);
+            label6.Location = new Point(75, 46);
             label6.Name = "label6";
-            label6.Size = new Size(134, 29);
+            label6.Size = new Size(154, 39);
             label6.TabIndex = 7;
             label6.Text = "0";
             label6.TextAlign = ContentAlignment.MiddleLeft;
@@ -295,9 +306,9 @@
             // 
             label7.Dock = DockStyle.Top;
             label7.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label7.Location = new Point(66, 0);
+            label7.Location = new Point(75, 0);
             label7.Name = "label7";
-            label7.Size = new Size(134, 29);
+            label7.Size = new Size(154, 39);
             label7.TabIndex = 6;
             label7.Text = "CURRENT ACCOUNTS";
             label7.TextAlign = ContentAlignment.MiddleLeft;
@@ -306,8 +317,9 @@
             // 
             pictureBox9.Dock = DockStyle.Left;
             pictureBox9.Location = new Point(0, 0);
+            pictureBox9.Margin = new Padding(3, 4, 3, 4);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(66, 64);
+            pictureBox9.Size = new Size(75, 85);
             pictureBox9.TabIndex = 2;
             pictureBox9.TabStop = false;
             // 
@@ -317,18 +329,19 @@
             panel9.Controls.Add(label12);
             panel9.Controls.Add(label13);
             panel9.Controls.Add(pictureBox13);
-            panel9.Location = new Point(213, 105);
+            panel9.Location = new Point(243, 140);
+            panel9.Margin = new Padding(3, 4, 3, 4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(193, 64);
+            panel9.Size = new Size(221, 85);
             panel9.TabIndex = 0;
             // 
             // label12
             // 
             label12.Dock = DockStyle.Bottom;
             label12.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(66, 35);
+            label12.Location = new Point(75, 46);
             label12.Name = "label12";
-            label12.Size = new Size(127, 29);
+            label12.Size = new Size(146, 39);
             label12.TabIndex = 7;
             label12.Text = "0";
             label12.TextAlign = ContentAlignment.MiddleLeft;
@@ -337,9 +350,9 @@
             // 
             label13.Dock = DockStyle.Top;
             label13.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label13.Location = new Point(66, 0);
+            label13.Location = new Point(75, 0);
             label13.Name = "label13";
-            label13.Size = new Size(127, 29);
+            label13.Size = new Size(146, 39);
             label13.TabIndex = 6;
             label13.Text = "WITHDRAW MONEY";
             label13.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,8 +363,9 @@
             pictureBox13.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox13.Dock = DockStyle.Left;
             pictureBox13.Location = new Point(0, 0);
+            pictureBox13.Margin = new Padding(3, 4, 3, 4);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(66, 64);
+            pictureBox13.Size = new Size(75, 85);
             pictureBox13.TabIndex = 2;
             pictureBox13.TabStop = false;
             // 
@@ -361,18 +375,19 @@
             panel5.Controls.Add(label3);
             panel5.Controls.Add(label4);
             panel5.Controls.Add(pictureBox8);
-            panel5.Location = new Point(213, 22);
+            panel5.Location = new Point(243, 29);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(193, 64);
+            panel5.Size = new Size(221, 85);
             panel5.TabIndex = 0;
             // 
             // label3
             // 
             label3.Dock = DockStyle.Bottom;
             label3.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(66, 35);
+            label3.Location = new Point(75, 46);
             label3.Name = "label3";
-            label3.Size = new Size(127, 29);
+            label3.Size = new Size(146, 39);
             label3.TabIndex = 5;
             label3.Text = "0";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -381,9 +396,9 @@
             // 
             label4.Dock = DockStyle.Top;
             label4.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label4.Location = new Point(66, 0);
+            label4.Location = new Point(75, 0);
             label4.Name = "label4";
-            label4.Size = new Size(127, 29);
+            label4.Size = new Size(146, 39);
             label4.TabIndex = 4;
             label4.Text = "EMPLOYEES";
             label4.TextAlign = ContentAlignment.MiddleLeft;
@@ -394,8 +409,9 @@
             pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox8.Dock = DockStyle.Left;
             pictureBox8.Location = new Point(0, 0);
+            pictureBox8.Margin = new Padding(3, 4, 3, 4);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(66, 64);
+            pictureBox8.Size = new Size(75, 85);
             pictureBox8.TabIndex = 2;
             pictureBox8.TabStop = false;
             // 
@@ -405,18 +421,19 @@
             panel8.Controls.Add(label10);
             panel8.Controls.Add(label11);
             panel8.Controls.Add(pictureBox14);
-            panel8.Location = new Point(25, 105);
+            panel8.Location = new Point(29, 140);
+            panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(173, 64);
+            panel8.Size = new Size(198, 85);
             panel8.TabIndex = 0;
             // 
             // label10
             // 
             label10.Dock = DockStyle.Bottom;
             label10.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(66, 35);
+            label10.Location = new Point(75, 46);
             label10.Name = "label10";
-            label10.Size = new Size(107, 29);
+            label10.Size = new Size(123, 39);
             label10.TabIndex = 7;
             label10.Text = "0";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -425,9 +442,9 @@
             // 
             label11.Dock = DockStyle.Top;
             label11.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label11.Location = new Point(66, 0);
+            label11.Location = new Point(75, 0);
             label11.Name = "label11";
-            label11.Size = new Size(107, 29);
+            label11.Size = new Size(123, 39);
             label11.TabIndex = 6;
             label11.Text = "BANK BALANCE";
             label11.TextAlign = ContentAlignment.MiddleLeft;
@@ -438,8 +455,9 @@
             pictureBox14.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox14.Dock = DockStyle.Left;
             pictureBox14.Location = new Point(0, 0);
+            pictureBox14.Margin = new Padding(3, 4, 3, 4);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(66, 64);
+            pictureBox14.Size = new Size(75, 85);
             pictureBox14.TabIndex = 2;
             pictureBox14.TabStop = false;
             // 
@@ -449,18 +467,19 @@
             panel4.Controls.Add(label2);
             panel4.Controls.Add(label1);
             panel4.Controls.Add(pictureBox7);
-            panel4.Location = new Point(25, 22);
+            panel4.Location = new Point(29, 29);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(173, 64);
+            panel4.Size = new Size(198, 85);
             panel4.TabIndex = 0;
             // 
             // label2
             // 
             label2.Dock = DockStyle.Bottom;
             label2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(66, 35);
+            label2.Location = new Point(75, 46);
             label2.Name = "label2";
-            label2.Size = new Size(107, 29);
+            label2.Size = new Size(123, 39);
             label2.TabIndex = 3;
             label2.Text = "0";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -469,9 +488,9 @@
             // 
             label1.Dock = DockStyle.Top;
             label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            label1.Location = new Point(66, 0);
+            label1.Location = new Point(75, 0);
             label1.Name = "label1";
-            label1.Size = new Size(107, 29);
+            label1.Size = new Size(123, 39);
             label1.TabIndex = 2;
             label1.Text = "CO ADMINS";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -482,41 +501,44 @@
             pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox7.Dock = DockStyle.Left;
             pictureBox7.Location = new Point(0, 0);
+            pictureBox7.Margin = new Padding(3, 4, 3, 4);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(66, 64);
+            pictureBox7.Size = new Size(75, 85);
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
             // 
             // panel2
             // 
-            panel2.Controls.Add(label5);
+            panel2.Controls.Add(adminName);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(860, 52);
+            panel2.Size = new Size(983, 69);
             panel2.TabIndex = 5;
             // 
-            // label5
+            // adminName
             // 
-            label5.Anchor = AnchorStyles.None;
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(4, 8);
-            label5.Name = "label5";
-            label5.Size = new Size(258, 36);
-            label5.TabIndex = 2;
-            label5.Text = "Welcome, Admin";
+            adminName.Anchor = AnchorStyles.None;
+            adminName.AutoSize = true;
+            adminName.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            adminName.ForeColor = Color.White;
+            adminName.Location = new Point(5, 11);
+            adminName.Name = "adminName";
+            adminName.Size = new Size(329, 44);
+            adminName.TabIndex = 2;
+            adminName.Text = "Welcome, Admin";
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(860, 578);
+            ClientSize = new Size(983, 771);
             Controls.Add(panel3);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Dashboard";
             Text = "Dashboard";
             panel3.ResumeLayout(false);
@@ -583,6 +605,6 @@
         private Label label1;
         private PictureBox pictureBox7;
         private Panel panel2;
-        private Label label5;
+        private Label adminName;
     }
 }

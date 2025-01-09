@@ -2,6 +2,8 @@ namespace BankingManagementSystem
 {
     internal static class Program
     {
+        public static AdminAccount currentAdmin;
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

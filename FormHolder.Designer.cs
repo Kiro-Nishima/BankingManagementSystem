@@ -67,8 +67,9 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(254, 578);
+            panel1.Size = new Size(290, 771);
             panel1.TabIndex = 0;
             // 
             // pictureBox6
@@ -76,9 +77,10 @@
             pictureBox6.BackColor = Color.IndianRed;
             pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
             pictureBox6.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox6.Location = new Point(22, 317);
+            pictureBox6.Location = new Point(25, 423);
+            pictureBox6.Margin = new Padding(3, 4, 3, 4);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(49, 38);
+            pictureBox6.Size = new Size(56, 51);
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
             // 
@@ -87,9 +89,10 @@
             pictureBox5.BackColor = Color.IndianRed;
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(22, 263);
+            pictureBox5.Location = new Point(25, 351);
+            pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(49, 38);
+            pictureBox5.Size = new Size(56, 51);
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
             // 
@@ -98,9 +101,10 @@
             pictureBox4.BackColor = Color.IndianRed;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Location = new Point(22, 210);
+            pictureBox4.Location = new Point(25, 280);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(49, 38);
+            pictureBox4.Size = new Size(56, 51);
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
             // 
@@ -109,9 +113,10 @@
             pictureBox3.BackColor = Color.IndianRed;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(22, 157);
+            pictureBox3.Location = new Point(25, 209);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(49, 38);
+            pictureBox3.Size = new Size(56, 51);
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
             // 
@@ -120,9 +125,10 @@
             pictureBox2.BackColor = Color.IndianRed;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(22, 100);
+            pictureBox2.Location = new Point(25, 133);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(49, 38);
+            pictureBox2.Size = new Size(56, 51);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -134,9 +140,10 @@
             btnEmployee.FlatStyle = FlatStyle.Flat;
             btnEmployee.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEmployee.ForeColor = Color.White;
-            btnEmployee.Location = new Point(67, 317);
+            btnEmployee.Location = new Point(77, 423);
+            btnEmployee.Margin = new Padding(3, 4, 3, 4);
             btnEmployee.Name = "btnEmployee";
-            btnEmployee.Size = new Size(170, 38);
+            btnEmployee.Size = new Size(211, 63);
             btnEmployee.TabIndex = 3;
             btnEmployee.Text = "Employees";
             btnEmployee.TextAlign = ContentAlignment.MiddleLeft;
@@ -151,9 +158,10 @@
             btnTransaction.FlatStyle = FlatStyle.Flat;
             btnTransaction.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTransaction.ForeColor = Color.White;
-            btnTransaction.Location = new Point(67, 263);
+            btnTransaction.Location = new Point(77, 351);
+            btnTransaction.Margin = new Padding(3, 4, 3, 4);
             btnTransaction.Name = "btnTransaction";
-            btnTransaction.Size = new Size(170, 38);
+            btnTransaction.Size = new Size(235, 63);
             btnTransaction.TabIndex = 3;
             btnTransaction.Text = "Transactions";
             btnTransaction.TextAlign = ContentAlignment.MiddleLeft;
@@ -168,9 +176,10 @@
             btnAccount.FlatStyle = FlatStyle.Flat;
             btnAccount.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAccount.ForeColor = Color.White;
-            btnAccount.Location = new Point(67, 210);
+            btnAccount.Location = new Point(77, 280);
+            btnAccount.Margin = new Padding(3, 4, 3, 4);
             btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(170, 38);
+            btnAccount.Size = new Size(194, 63);
             btnAccount.TabIndex = 3;
             btnAccount.Text = "Accounts";
             btnAccount.TextAlign = ContentAlignment.MiddleLeft;
@@ -185,9 +194,10 @@
             btnCustomer.FlatStyle = FlatStyle.Flat;
             btnCustomer.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCustomer.ForeColor = Color.White;
-            btnCustomer.Location = new Point(67, 157);
+            btnCustomer.Location = new Point(77, 209);
+            btnCustomer.Margin = new Padding(3, 4, 3, 4);
             btnCustomer.Name = "btnCustomer";
-            btnCustomer.Size = new Size(170, 38);
+            btnCustomer.Size = new Size(205, 63);
             btnCustomer.TabIndex = 3;
             btnCustomer.Text = "Customers";
             btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
@@ -202,9 +212,10 @@
             btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDashboard.ForeColor = Color.White;
-            btnDashboard.Location = new Point(67, 100);
+            btnDashboard.Location = new Point(77, 133);
+            btnDashboard.Margin = new Padding(3, 4, 3, 4);
             btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(170, 38);
+            btnDashboard.Size = new Size(215, 63);
             btnDashboard.TabIndex = 3;
             btnDashboard.Text = "Dashboard";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -218,28 +229,31 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(254, 52);
+            pictureBox1.Size = new Size(290, 69);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // FormHolderDisplay
             // 
             FormHolderDisplay.Dock = DockStyle.Fill;
-            FormHolderDisplay.Location = new Point(254, 0);
+            FormHolderDisplay.Location = new Point(290, 0);
+            FormHolderDisplay.Margin = new Padding(3, 4, 3, 4);
             FormHolderDisplay.Name = "FormHolderDisplay";
-            FormHolderDisplay.Size = new Size(860, 578);
+            FormHolderDisplay.Size = new Size(983, 771);
             FormHolderDisplay.TabIndex = 1;
             // 
             // FormHolder
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(1114, 578);
+            ClientSize = new Size(1273, 771);
             Controls.Add(FormHolderDisplay);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormHolder";
             Text = "Dashboard";
             panel1.ResumeLayout(false);
