@@ -53,5 +53,10 @@ namespace BankingManagementSystem
         {
             btnEmployee.Click += (s, e) => ShowFormInPanel(new Employees(), FormHolderDisplay);
         }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            btnAboutUs.Click += (s, e) => ShowFormInPanel(new AboutUs(), FormHolderDisplay);
+        }
     }
 }
