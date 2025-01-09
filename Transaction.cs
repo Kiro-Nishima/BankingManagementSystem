@@ -14,12 +14,13 @@ namespace BankingManagementSystem
     public partial class Transaction : Form
     {
         CustomerAccountList customerAccountList;
-        Queue<TransactionDetail> transactions = new Queue<TransactionDetail>();
+        TransactionList transactionList;
 
         public Transaction()
         {
             InitializeComponent();
             customerAccountList = CustomerAccountList.GetInstance();
+            transactionList = TransactionList.GetInstance();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,14 +40,14 @@ namespace BankingManagementSystem
                 if (account.limitReached) return;
             }
 
-            transactions.Enqueue(transaction);
+            transactionList.transactions.Enqueue(transaction);
             DisplayStackInDataGridView();
         }
 
         private void DisplayStackInDataGridView()
         {
             // Convert the stack to a list
-            var transactionsList = new List<TransactionDetail>(transactions);
+            var transactionsList = new List<TransactionDetail>(transactionList.transactions);
 
             // Bind the list to the DataGridView
             dataGridView1.DataSource = transactionsList;
@@ -62,7 +63,7 @@ namespace BankingManagementSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            transactions.Dequeue();
+            transactionList.transactions.Dequeue();
             DisplayStackInDataGridView();
         }
     }
