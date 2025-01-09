@@ -12,12 +12,16 @@ namespace BankingManagementSystem
 {
     public partial class Dashboard : Form
     {
+        AdminAccounts adminAccounts;
+
         public Dashboard()
         {
             InitializeComponent();
+            adminAccounts = AdminAccounts.GetInstance();
 
             AdminAccount currentAdmin = Program.currentAdmin;
             adminName.Text = $"Welcome, {currentAdmin.name}";
+            label2.Text = adminAccounts.accounts.Count.ToString();
         }
     }
 }

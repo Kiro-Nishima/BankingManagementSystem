@@ -32,9 +32,19 @@ namespace BankingManagementSystem
             string phoneNumber = numberInput.Text;
             string email = emailInput.Text;
             string address = addressInput.Text;
-            string accountId = accountIdInput.Text;
+            int accountId = Convert.ToInt32(accountIdInput.Text);
             string accountType = typeInput.Text;
             string dateOpened = dateOpenedInput.Text;
+
+            CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened);
+            customerAccountList.accounts.Add(newAccount);
+            RefreshDataGridView();
+        }
+
+        void RefreshDataGridView()
+        {
+            customers.DataSource = null;
+            customers.DataSource = customerAccountList.accounts;
         }
     }
 }

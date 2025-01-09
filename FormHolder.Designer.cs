@@ -82,7 +82,7 @@
             pictureBox7.BackColor = Color.IndianRed;
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox7.Location = new Point(22, 370);
+            pictureBox7.Location = new Point(25, 493);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(49, 38);
             pictureBox7.TabIndex = 1;
@@ -156,9 +156,9 @@
             btnAboutUs.FlatStyle = FlatStyle.Flat;
             btnAboutUs.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAboutUs.ForeColor = Color.White;
-            btnAboutUs.Location = new Point(67, 370);
+            btnAboutUs.Location = new Point(77, 493);
             btnAboutUs.Name = "btnAboutUs";
-            btnAboutUs.Size = new Size(170, 38);
+            btnAboutUs.Size = new Size(170, 47);
             btnAboutUs.TabIndex = 3;
             btnAboutUs.Text = "About Us";
             btnAboutUs.TextAlign = ContentAlignment.MiddleLeft;
