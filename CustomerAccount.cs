@@ -14,11 +14,12 @@ namespace BankingManagementSystem
         public string address { get; set; }
         public int accountId { get; set; }
         public string accountType { get; set; }
+        public double balance { get; set; }
         public string dateOpened { get; set; }
         public TransactionDetail[] transactons = new TransactionDetail[5];
         public bool limitReached = false;
 
-        public CustomerAccount(int accountId, string email, string name, string phoneNumber, string address, string accountType, string dateOpened)
+        public CustomerAccount(int accountId, string email, string name, string phoneNumber, string address, string accountType, string dateOpened, double balance)
         {
             this.accountId = accountId;
             this.email = email;
@@ -27,6 +28,7 @@ namespace BankingManagementSystem
             this.address = address;
             this.accountType = accountType;
             this.dateOpened = dateOpened;
+            this.balance = balance;
         }
 
         // Add transaction to this account

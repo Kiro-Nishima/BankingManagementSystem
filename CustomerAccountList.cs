@@ -12,8 +12,8 @@ namespace BankingManagementSystem
         private static CustomerAccountList instance;
         public List<CustomerAccount> accounts = new List<CustomerAccount>
         {
-            new CustomerAccount(1234, "markwellmerto@gmail.com", "Mark Well Merto", "095846325145", "Mabitac, Laguna", "Savings", "jan 9, 2025"),
-            new CustomerAccount(5678, "marielshaneagbagala@gmail.com", "Mariel Shane Agbagala", "09568457125", "Paete, Laguna", "Savings", "jan 5, 2025")
+            new CustomerAccount(1234, "markwellmerto@gmail.com", "Mark Well Merto", "095846325145", "Mabitac, Laguna", "Savings", "jan 9, 2025", 2500000),
+            new CustomerAccount(5678, "marielshaneagbagala@gmail.com", "Mariel Shane Agbagala", "09568457125", "Paete, Laguna", "Savings", "jan 5, 2025", 3000000)
         };
 
         private CustomerAccountList()
