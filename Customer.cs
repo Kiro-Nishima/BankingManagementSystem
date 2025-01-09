@@ -36,7 +36,7 @@ namespace BankingManagementSystem
             string accountType = typeInput.Text;
             string dateOpened = dateOpenedInput.Text;
 
-            CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened);
+            CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened, 1);
             customerAccountList.accounts.Add(newAccount);
             RefreshDataGridView();
         }

@@ -21,6 +21,7 @@ namespace BankingManagementSystem
             InitializeComponent();
             customerAccountList = CustomerAccountList.GetInstance();
             transactionList = TransactionList.GetInstance();
+            DisplayStackInDataGridView();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace BankingManagementSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (transactionList.transactions.Count <= 0) return;
             transactionList.transactions.Dequeue();
             DisplayStackInDataGridView();
         }
