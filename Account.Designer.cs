@@ -32,8 +32,6 @@
             dataGridView1 = new DataGridView();
             button5 = new Button();
             button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
             label7 = new Label();
@@ -62,6 +60,7 @@
             dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.Size = new Size(777, 173);
             dataGridView1.TabIndex = 3;
+            dataGridView1.RowHeaderMouseClick += dataGridView1_RowHeaderMouseClick;
             // 
             // button5
             // 
@@ -77,6 +76,7 @@
             button5.TabIndex = 1;
             button5.Text = "Delete";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -92,36 +92,6 @@
             button4.TabIndex = 1;
             button4.Text = "Update";
             button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.AutoSize = true;
-            button3.BackColor = Color.IndianRed;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(221, 278);
-            button3.Name = "button3";
-            button3.Size = new Size(115, 33);
-            button3.TabIndex = 1;
-            button3.Text = "Add";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.AutoSize = true;
-            button2.BackColor = Color.IndianRed;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(100, 278);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 33);
-            button2.TabIndex = 1;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -143,8 +113,6 @@
             panel3.Controls.Add(dataGridView1);
             panel3.Controls.Add(button5);
             panel3.Controls.Add(button4);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
             panel3.Controls.Add(textBox5);
             panel3.Controls.Add(textBox4);
             panel3.Controls.Add(textBox3);
@@ -281,8 +249,6 @@
         private DataGridView dataGridView1;
         private Button button5;
         private Button button4;
-        private Button button3;
-        private Button button2;
         private Panel panel2;
         private Panel panel3;
         private TextBox textBox5;

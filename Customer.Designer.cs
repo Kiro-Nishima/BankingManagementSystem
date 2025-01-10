@@ -35,10 +35,7 @@
             panel2 = new Panel();
             panel3 = new Panel();
             customers = new DataGridView();
-            deleteBtn = new Button();
-            updateBtn = new Button();
             addBtn = new Button();
-            saveBtn = new Button();
             label4 = new Label();
             label6 = new Label();
             label1 = new Label();
@@ -107,10 +104,7 @@
             panel3.BackColor = Color.Transparent;
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(customers);
-            panel3.Controls.Add(deleteBtn);
-            panel3.Controls.Add(updateBtn);
             panel3.Controls.Add(addBtn);
-            panel3.Controls.Add(saveBtn);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label1);
@@ -145,36 +139,6 @@
             customers.Size = new Size(777, 174);
             customers.TabIndex = 3;
             // 
-            // deleteBtn
-            // 
-            deleteBtn.AutoSize = true;
-            deleteBtn.BackColor = Color.IndianRed;
-            deleteBtn.FlatAppearance.BorderSize = 0;
-            deleteBtn.FlatStyle = FlatStyle.Flat;
-            deleteBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            deleteBtn.ForeColor = Color.White;
-            deleteBtn.Location = new Point(558, 278);
-            deleteBtn.Name = "deleteBtn";
-            deleteBtn.Size = new Size(115, 33);
-            deleteBtn.TabIndex = 1;
-            deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = false;
-            // 
-            // updateBtn
-            // 
-            updateBtn.AutoSize = true;
-            updateBtn.BackColor = Color.IndianRed;
-            updateBtn.FlatAppearance.BorderSize = 0;
-            updateBtn.FlatStyle = FlatStyle.Flat;
-            updateBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            updateBtn.ForeColor = Color.White;
-            updateBtn.Location = new Point(437, 278);
-            updateBtn.Name = "updateBtn";
-            updateBtn.Size = new Size(115, 33);
-            updateBtn.TabIndex = 1;
-            updateBtn.Text = "Update";
-            updateBtn.UseVisualStyleBackColor = false;
-            // 
             // addBtn
             // 
             addBtn.AutoSize = true;
@@ -190,21 +154,6 @@
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
-            // 
-            // saveBtn
-            // 
-            saveBtn.AutoSize = true;
-            saveBtn.BackColor = Color.IndianRed;
-            saveBtn.FlatAppearance.BorderSize = 0;
-            saveBtn.FlatStyle = FlatStyle.Flat;
-            saveBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            saveBtn.ForeColor = Color.White;
-            saveBtn.Location = new Point(100, 278);
-            saveBtn.Name = "saveBtn";
-            saveBtn.Size = new Size(115, 33);
-            saveBtn.TabIndex = 1;
-            saveBtn.Text = "Save";
-            saveBtn.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -382,14 +331,11 @@
         private Label label2;
         private Panel panel2;
         private Panel panel3;
-        private Button saveBtn;
         private Label label4;
         private Label label1;
         private TextBox nameInput;
         private TextBox numberInput;
         private TextBox accountIdInput;
-        private Button deleteBtn;
-        private Button updateBtn;
         private Button addBtn;
         private DataGridView customers;
         private Label label5;

@@ -38,14 +38,12 @@ namespace BankingManagementSystem
 
             var ceoNode = new TreeNode("Mark Well Merto (CEO)") { Tag = "CEO" };
 
-            var manager = new TreeNode("Mariel Shane Agbagala (Manager)") { Tag = "MANAGER" };
-            var manager2 = new TreeNode("Nice Given Cabañero (Employee)") { Tag = "MANAGER" };
+            var manager = new TreeNode("James Bryan Tolentino (Accounting Manager)") { Tag = "MANAGER" };
+            var manager2 = new TreeNode("John Kraevhen Gemanel (Client Officer)") { Tag = "MANAGER" };
 
-            manager.Nodes.Add(new TreeNode("Kayeri Clayer Damian (Employee)") { Tag = "EMPLOYEE" });
-            manager.Nodes.Add(new TreeNode("John Kraevhen Gemanel (Employee)") { Tag = "EMPLOYEE" });
-            manager2.Nodes.Add(new TreeNode("Bjorn Marek Maguyon (Employee)") { Tag = "EMPLOYEE" });
-            manager2.Nodes.Add(new TreeNode("James Bryan Tolentino (Employee)") { Tag = "EMPLOYEE" });
-
+            manager.Nodes.Add(new TreeNode("Nice Given Cabañero (Financial Analyst)") { Tag = "EMPLOYEE" });
+            manager2.Nodes.Add(new TreeNode("Kayeri Clayer Damian (Loan Specialist)") { Tag = "EMPLOYEE" });
+            manager2.Nodes.Add(new TreeNode("Bjorn Marek Maguyon (Stock Broker)") { Tag = "EMPLOYEE" });
 
             ceoNode.Nodes.Add(manager);
             ceoNode.Nodes.Add(manager2);

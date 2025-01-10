@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label5 = new Label();
             panel2 = new Panel();
@@ -37,7 +37,6 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -92,7 +91,6 @@
             panel3.Controls.Add(button5);
             panel3.Controls.Add(button4);
             panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
@@ -116,10 +114,11 @@
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.Size = new Size(893, 232);
             dataGridView1.TabIndex = 3;
+            dataGridView1.RowHeaderMouseClick += dataGridView1_RowHeaderMouseClick;
             // 
             // button5
             // 
@@ -136,6 +135,7 @@
             button5.TabIndex = 1;
             button5.Text = "Delete";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -152,6 +152,7 @@
             button4.TabIndex = 1;
             button4.Text = "Update";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -169,22 +170,6 @@
             button3.Text = "Add";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
-            // 
-            // button2
-            // 
-            button2.AutoSize = true;
-            button2.BackColor = Color.IndianRed;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(114, 371);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(131, 44);
-            button2.TabIndex = 1;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -303,7 +288,6 @@
         private Button button5;
         private Button button4;
         private Button button3;
-        private Button button2;
         private Label label9;
         private TextBox textBox5;
         private TextBox textBox4;
