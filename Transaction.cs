@@ -26,23 +26,29 @@ namespace BankingManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(textBox5.Text);
-            string type = textBox3.Text;
-            string accountId = textBox1.Text;
-            double amount = Convert.ToDouble(textBox4.Text);
-            DateTime date = dateTimePicker1.Value;
-
-            // Update account
-            TransactionDetail transaction = new TransactionDetail(id, type, accountId, amount, date);
-            CustomerAccount account = customerAccountList.accounts.FirstOrDefault(acc => acc.accountId == Convert.ToInt32(accountId));
-            if (account != null)
+            try
             {
-                account.addNewTransaction(transaction);
-                if (account.limitReached) return;
-            }
+                int id = Convert.ToInt32(textBox5.Text);
+                string type = textBox3.Text;
+                string accountId = textBox1.Text;
+                double amount = Convert.ToDouble(textBox4.Text);
+                DateTime date = dateTimePicker1.Value;
 
-            transactionList.transactions.Enqueue(transaction);
-            DisplayStackInDataGridView();
+                // Update account
+                TransactionDetail transaction = new TransactionDetail(id, type, accountId, amount, date);
+                CustomerAccount account = customerAccountList.accounts.FirstOrDefault(acc => acc.accountId == Convert.ToInt32(accountId));
+                if (account != null)
+                {
+                    account.addNewTransaction(transaction);
+                    if (account.limitReached) return;
+                }
+
+                transactionList.transactions.Enqueue(transaction);
+                DisplayStackInDataGridView();
+            } catch(Exception ex)
+            {
+                MessageBox.Show("Please fill in the necessary information.");
+            }
         }
 
         private void DisplayStackInDataGridView()

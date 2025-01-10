@@ -28,17 +28,23 @@ namespace BankingManagementSystem
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            string name = nameInput.Text;
-            string phoneNumber = numberInput.Text;
-            string email = emailInput.Text;
-            string address = addressInput.Text;
-            int accountId = Convert.ToInt32(accountIdInput.Text);
-            string accountType = typeInput.Text;
-            string dateOpened = dateOpenedInput.Text;
+            try
+            { 
+                string name = nameInput.Text;
+                string phoneNumber = numberInput.Text;
+                string email = emailInput.Text;
+                string address = addressInput.Text;
+                int accountId = Convert.ToInt32(accountIdInput.Text);
+                string accountType = typeInput.Text;
+                string dateOpened = dateOpenedInput.Text;
 
-            CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened, 1);
-            customerAccountList.accounts.Add(newAccount);
-            RefreshDataGridView();
+                CustomerAccount newAccount = new CustomerAccount(accountId, email, name,phoneNumber, address, accountType, dateOpened, 1);
+                customerAccountList.accounts.Add(newAccount);
+                RefreshDataGridView();
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Please fill in the necessary information.");
+            }
         }
 
         void RefreshDataGridView()
