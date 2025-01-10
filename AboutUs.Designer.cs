@@ -33,8 +33,6 @@
             TreeView = new TreeView();
             graphPanel = new Panel();
             label3 = new Label();
-            label1 = new Label();
-            label2 = new Label();
             panel1.SuspendLayout();
             graphPanel.SuspendLayout();
             SuspendLayout();
@@ -76,7 +74,6 @@
             // 
             graphPanel.BackColor = Color.DarkRed;
             graphPanel.Controls.Add(label3);
-            graphPanel.Controls.Add(label1);
             graphPanel.Location = new Point(12, 327);
             graphPanel.Name = "graphPanel";
             graphPanel.Size = new Size(836, 239);
@@ -94,36 +91,12 @@
             label3.Text = "C - Costumer\r\nMB - Merto Bank\r\nMA - Manage Account\r\nMCA - Manage Created\r\n           Account\r\nT - Transaction";
             label3.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(762, 214);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 22);
-            label1.TabIndex = 0;
-            label1.Text = "Graph";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Maroon;
-            label2.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(797, 287);
-            label2.Name = "label2";
-            label2.Size = new Size(48, 22);
-            label2.TabIndex = 0;
-            label2.Text = "Tree";
-            // 
             // AboutUs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(860, 578);
-            Controls.Add(label2);
             Controls.Add(graphPanel);
             Controls.Add(TreeView);
             Controls.Add(panel1);
@@ -135,7 +108,6 @@
             graphPanel.ResumeLayout(false);
             graphPanel.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -144,8 +116,6 @@
         private Label label5;
         private TreeView TreeView;
         private Panel graphPanel;
-        private Label label1;
-        private Label label2;
         private Label label3;
     }
 }
