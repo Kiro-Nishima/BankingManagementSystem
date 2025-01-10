@@ -32,9 +32,9 @@
             label5 = new Label();
             TreeView = new TreeView();
             graphPanel = new Panel();
+            label3 = new Label();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             panel1.SuspendLayout();
             graphPanel.SuspendLayout();
             SuspendLayout();
@@ -82,6 +82,18 @@
             graphPanel.Size = new Size(836, 239);
             graphPanel.TabIndex = 5;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(670, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(163, 102);
+            label3.TabIndex = 0;
+            label3.Text = "C - Costumer\r\nMB - Merto Bank\r\nMA - Manage Account\r\nMCA - Manage Created\r\n           Account\r\nT - Transaction";
+            label3.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -104,18 +116,6 @@
             label2.Size = new Size(48, 22);
             label2.TabIndex = 0;
             label2.Text = "Tree";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(670, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(163, 119);
-            label3.TabIndex = 0;
-            label3.Text = "C - Costumer\r\nMB - Merto Bank\r\nE - Employee\r\nMA - Manage Account\r\nMCA - Manage Created\r\n           Account\r\nT - Transaction";
-            label3.TextAlign = ContentAlignment.MiddleRight;
             // 
             // AboutUs
             // 

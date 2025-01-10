@@ -101,7 +101,7 @@ namespace BankingManagementSystem
 
             Point node1 = new Point(100, 125);
             Point node2 = new Point(250, 125);
-            Point node3 = new Point(250, 200);
+            //Point node3 = new Point(250, 200);
             Point node4 = new Point(250, 50);
             Point node5 = new Point(400, 50);
             Point node6 = new Point(400, 125);
@@ -111,7 +111,7 @@ namespace BankingManagementSystem
 
             g.FillEllipse(Brushes.Blue, new Rectangle(node1.X - radius, node1.Y - radius, 2 * radius, 2 * radius));
             g.FillEllipse(Brushes.Red, new Rectangle(node2.X - radius, node2.Y - radius, 2 * radius, 2 * radius));
-            g.FillEllipse(Brushes.Blue, new Rectangle(node3.X - radius, node3.Y - radius, 2 * radius, 2 * radius));
+            //g.FillEllipse(Brushes.Blue, new Rectangle(node3.X - radius, node3.Y - radius, 2 * radius, 2 * radius));
             g.FillEllipse(Brushes.DarkSalmon, new Rectangle(node4.X - radius, node4.Y - radius, 2 * radius, 2 * radius));
             g.FillEllipse(Brushes.DarkSalmon, new Rectangle(node5.X - radius, node5.Y - radius, 2 * radius, 2 * radius));
             g.FillEllipse(Brushes.DarkSalmon, new Rectangle(node6.X - radius, node6.Y - radius, 2 * radius, 2 * radius));
@@ -121,7 +121,7 @@ namespace BankingManagementSystem
             Brush textBrush = Brushes.White; 
             g.DrawString("C", font, textBrush, node1.X - radius / 3, node1.Y - radius / 2.5f);
             g.DrawString("MB", font, textBrush, node2.X - radius / 1.8f, node2.Y - radius / 2.5f);
-            g.DrawString("E", font, textBrush, node3.X - radius / 3, node3.Y - radius / 2.5f);
+            //g.DrawString("E", font, textBrush, node3.X - radius / 3, node3.Y - radius / 2.5f);
             g.DrawString("MA", font, textBrush, node4.X - radius / 1.8f, node4.Y - radius / 2.5f);
             g.DrawString("MCA", font, textBrush, node5.X - radius / 1.2f, node5.Y - radius / 2.5f);
             g.DrawString("T", font, textBrush, node6.X - radius / 3, node6.Y - radius / 2.5f);
@@ -132,8 +132,8 @@ namespace BankingManagementSystem
             Point point1 = GetPointOnCircle(node1, node2, radius);
             Point point2 = GetPointOnCircle(node2, node1, radius);
 
-            Point point3 = GetPointOnCircle(node2, node3, radius);
-            Point point4 = GetPointOnCircle(node3, node2, radius);
+            //Point point3 = GetPointOnCircle(node2, node3, radius);
+            //Point point4 = GetPointOnCircle(node3, node2, radius);
 
             Point point5 = GetPointOnCircle(node2, node4, radius);
             Point point6 = GetPointOnCircle(node4, node2, radius);
@@ -147,29 +147,29 @@ namespace BankingManagementSystem
             Point point11 = GetPointOnCircle(node6, node7, radius);
             Point point12 = GetPointOnCircle(node7, node6, radius);
 
-            Point point13 = GetPointOnCircle(node3, node7, radius);
-            Point point14 = GetPointOnCircle(node7, node3, radius);
+            //Point point13 = GetPointOnCircle(node3, node7, radius);
+            //Point point14 = GetPointOnCircle(node7, node3, radius);
 
             Point point15 = GetPointOnCircle(node2, node6, radius);
             Point point16 = GetPointOnCircle(node6, node2, radius);
 
             g.DrawLine(arrowPen, point1, point2); 
-            g.DrawLine(arrowPen, point3, point4);
+            //g.DrawLine(arrowPen, point3, point4);
             g.DrawLine(arrowPen, point5, point6);
             g.DrawLine(arrowPen, point7, point8);
             g.DrawLine(arrowPen, point9, point10);
             g.DrawLine(arrowPen, point11, point12);
-            g.DrawLine(arrowPen, point13, point14);
+            //g.DrawLine(arrowPen, point13, point14);
             g.DrawLine(arrowPen, point15, point16);
 
             DrawArrowHead(g, point1, point2);
-            DrawArrowHead(g, point3, point4);
-            DrawArrowHead(g, point4, point3);
+            //DrawArrowHead(g, point3, point4);
+            //DrawArrowHead(g, point4, point3);
             DrawArrowHead(g, point5, point6);
             DrawArrowHead(g, point7, point8);
             DrawArrowHead(g, point9, point10);
             DrawArrowHead(g, point11, point12);
-            DrawArrowHead(g, point13, point14);
+            //DrawArrowHead(g, point13, point14);
             DrawArrowHead(g, point15, point16);
         }
 
